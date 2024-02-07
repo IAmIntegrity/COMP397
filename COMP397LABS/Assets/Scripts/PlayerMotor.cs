@@ -43,5 +43,9 @@ public class PlayerMotor : MonoBehaviour
         {
             isGrounded = true;
         }
+        else if (collision.gameObject.tag == "Deathzone")
+        {
+            transform.position = new Vector3(0, 1.5f, 0);
+        }
     }
 }
